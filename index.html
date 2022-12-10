@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Brtwo</title>
+
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@1&display=swap" rel="stylesheet">
+
+<style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Switzer', sans-serif;
+      font-size: 14px;
+      font-size: clamp(14px, 4.5vw, 25px);
+      color: #eee;
+      background: #111;
+      cursor: default;
+      box-sizing: border-box;
+      text-rendering: optimizeLegibility;
+      -webkit-text-size-adjust: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    shader-art {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    shader-art canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .dg {
+      display: none !important
+    }
+
+    .content {
+      position: relative;
+      font-weight: 350;
+      font-size: inherit;
+      text-transform: uppercase;
+      line-height: 1.3;
+      width: 35ch;
+      margin: 0;
+      padding: 5%;
+      z-index: 999;
+    }
+
+    h1,
+    p {
+      margin: 0;
+    }
+
+    svg {
+      width: clamp(88, 8px, 4.5vw, 111px);
+      height: clamp(40px, 4.5vw, 50px);
+      margin-bottom: .5rem;
+    }
+
+    .contact {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    a {
+      display: block;
+      pointer-events: all !important;
+      cursor: pointer;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all .3s;
+    }
+
+    a:hover {
+      font-weight: 350;
+    }
+
+    a:first-child {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="body">
+  <div class="content">
+    <h1>
+      <svg viewBox="0 0 222 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.85521 47.6847L4.86759 47.6725V46.6848V13.9871V11.6001L6.56898 13.2743C9.92055 16.5724 14.5095 18.6066 19.5651 18.6066C24.62 18.6066 29.2089 16.5724 32.5635 13.274L34.2646 11.6014V13.9871V47.0238V48.0362L33.2522 48.0237L5.85521 47.6847ZM4.86759 52.671V51.5685L5.96489 51.6757C21.7664 53.2207 34.2646 66.7849 34.2646 82.9213V86.0125V88.3982L32.5635 86.7255C29.2089 83.427 24.62 81.3928 19.5651 81.3928C14.5096 81.3928 9.92057 83.427 6.569 86.7252L4.86759 88.3995V86.0125V52.671ZM38.1302 51.9631V1.00008H34.2311C33.7162 8.65435 27.3363 14.728 19.5651 14.728C11.7932 14.728 5.41575 8.65417 4.9011 1.00008H1V98.9993H4.90109C5.41566 91.344 11.7932 85.2715 19.5651 85.2715C27.3363 85.2715 33.7163 91.3438 34.2311 98.9993H38.1302V82.9213C38.1302 73.6529 34.5724 64.9008 28.1094 58.2721C26.3914 56.5102 24.521 54.9516 22.5262 53.6079L19.7494 51.7375L23.0971 51.7786L38.1302 51.9631Z" fill="#EEEEEE" /><path d="M189.438 86.7299L187.737 88.4034V86.017V13.9835V11.5973L189.438 13.2705C192.793 16.57 197.381 18.6068 202.435 18.6068C207.491 18.6068 212.079 16.5689 215.434 13.2677L217.135 11.5933V13.9804V86.02V88.4071L215.434 86.7328C212.079 83.4315 207.491 81.3937 202.435 81.3937C197.381 81.3937 192.793 83.4303 189.438 86.7299ZM217.102 1.00001C216.587 8.65553 210.205 14.7281 202.435 14.7281C194.664 14.7281 188.285 8.6553 187.771 1.00001H183.87V98.9993H187.771C188.285 91.345 194.664 85.2724 202.435 85.2724C210.205 85.2724 216.587 91.3447 217.102 98.9993H221V1.00001H217.102Z" fill="#EEEEEE" /><path d="M48.4705 13.9855V11.5997L50.1716 13.2724C53.526 16.5709 58.116 18.6063 63.1705 18.6063C68.2229 18.6063 72.8113 16.571 76.1658 13.2724L77.8669 11.5997V13.9855V36.0132V38.3998L76.1656 36.7261C72.8114 33.4262 68.2231 31.3922 63.1705 31.3922C58.1158 31.3922 53.5259 33.4263 50.1718 36.7261L48.4705 38.3998V36.0132V13.9855ZM48.504 0.999825H44.604V98.9968H48.4705V52.6714V51.57L49.5667 51.6761C65.4284 53.2099 77.8669 66.6361 77.8669 82.9201V98.9968H81.7353V82.9201C81.7353 64.5617 67.6609 49.4334 49.7584 47.798L48.6084 47.693L48.8767 46.5698C50.4224 40.1005 56.2377 35.2723 63.1705 35.2723C70.9416 35.2723 77.3189 41.3435 77.8334 48.9989H81.7353V0.999825H77.8334C77.3189 8.65527 70.9416 14.7264 63.1705 14.7264C55.3961 14.7264 49.0185 8.65541 48.504 0.999825Z" fill="#EEEEEE" /><path d="M104.839 19.388V99H108.708V19.388V18.528L109.558 18.3993C113.501 17.8022 117.045 15.9557 119.771 13.273L121.473 11.5992V13.9859V24.0004H125.338V1.00014H121.439C120.924 8.65586 114.544 14.7268 106.773 14.7268C99.0016 14.7268 92.6242 8.65567 92.1097 1.00014H88.2075V24.0004H92.0762V13.9859V11.5987L93.7776 13.2731C96.5035 15.9558 100.046 17.8019 103.989 18.3993L104.839 18.5281V19.388Z" fill="#EEEEEE" /><path d="M166.01 68.2128V64.3149H143.064V68.2129C144.357 68.253 145.631 68.3711 146.884 68.5658L149.387 68.9548L147.293 70.3806C143.414 73.022 140.083 76.4168 137.514 80.3557L135.677 83.1742V79.8095V1.00049H131.812V98.5881H135.692C136.078 86.3026 143.541 75.7778 154.122 70.9747L154.535 70.787L154.949 70.9747C165.524 75.7778 172.99 86.3026 173.375 98.5881H177.259V1.00049H173.391V79.8095V83.1772L171.553 80.3553C168.988 76.4167 165.657 73.0221 161.775 70.3807L159.679 68.955L162.184 68.5658C163.438 68.371 164.714 68.2529 166.01 68.2128Z" fill="#EEEEEE" /></svg>
+    </h1>
+    <p>
+      I'm a amateur racing driver and
+      software developer working on projects for apps, websites, etc.
+      <a href="mailto:info@brtwo.com">Email</a>
+      <a href="https://instagram.com/_brtwo" target="_blank">Instagram</a>
+    </p>
+  </div>
+
+  <shader-art autoplay>
+    <uniform type="float" name="scale" value="0.3" min="0.1" max="4" step="0.01" />
+    <uniform type="float" name="ax" value="5" min="1" max="15" step=".01" />
+    <uniform type="float" name="ay" value="7" min="1" max="15" step=".01" />
+    <uniform type="float" name="az" value="9" min="1" max="15" step=".01" />
+    <uniform type="float" name="aw" value="13" min="1" max="15" step=".01" />
+    <uniform type="float" name="bx" value="1" min="-1" max="1" step="0.01" />
+    <uniform type="float" name="by" value="1" min="-1" max="1" step="0.01" />
+    <uniform type="color" name="color1" value="#999999" />
+    <uniform type="color" name="color2" value="#999999" />
+    <uniform type="color" name="color3" value="#999999" />
+    <uniform type="color" name="color4" value="#999999" />
+
+    <script type="buffer" name="position" data-size="2">
+      [-1, 1, -1,-1, 1,1, 1, 1, -1,-1, 1,-1]
+    </script>
+    <script type="buffer" name="uv" data-size="2">
+      [ 0, 0,  0, 1, 1,0, 1, 0,  0, 1, 1, 1]
+    </script>
+
+    <script type="vert">
+      precision highp float;
+      attribute vec4 position;
+      attribute vec2 uv;
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = position;
+      }
+    </script>
+
+    <script type="frag">
+      precision highp float;
+      varying vec2 vUv;
+      uniform float time;
+      uniform float scale;
+      uniform vec2 resolution;
+      uniform vec3 color1, color2, color3, color4;
+      uniform int numOctaves;
+      const float PI = 3.141592654;
+      uniform float ax, ay, az, aw;
+      uniform float bx, by;
+      
+      float cheapNoise(vec3 stp) {
+        vec3 p = vec3(stp.st, stp.p);
+        vec4 a = vec4(ax, ay, az, aw);
+        return mix(
+          sin(p.z + p.x * a.x + cos(p.x * a.x - p.z)) * 
+          cos(p.z + p.y * a.y + cos(p.y * a.x + p.z)),
+          sin(1. + p.x * a.z + p.z + cos(p.y * a.w - p.z)) * 
+          cos(1. + p.y * a.w + p.z + cos(p.x * a.x + p.z)), 
+          .436
+        );
+      }
+      
+      void main() {
+        vec2 aR = vec2(resolution.x/resolution.y, 1.);
+        vec2 st = vUv * aR * scale;
+        float S = sin(time * .005);
+        float C = cos(time * .005);
+        vec2 v1 = vec2(cheapNoise(vec3(st, 2.)), cheapNoise(vec3(st, 1.)));
+        vec2 v2 = vec2(
+          cheapNoise(vec3(st + bx*v1 + vec2(C * 1.7, S * 9.2), 0.15 * time)),
+          cheapNoise(vec3(st + by*v1 + vec2(S * 8.3, C * 2.8), 0.126 * time))
+        );
+        float n = .5 + .5 * cheapNoise(vec3(st + v2, 0.));
+        
+        vec3 color = mix(
+          color1,
+          color2,
+          clamp((n*n)*8.,0.0,1.0)
+        );
+
+        color = mix(
+          color,
+          color3,
+          clamp(length(v1),0.0,1.0)
+        );
+
+        color = mix(
+          color,
+          color4,
+          clamp(length(v2.x),0.0,1.0)
+        );
+        
+        color /= n*n + n * 7.;
+        gl_FragColor = vec4(color,1.);
+      }
+    </script>
+  </shader-art>
+
+  <script id="rendered-js" type="module">
+    import { ShaderArt } from 'https://cdn.skypack.dev/shader-art';
+    import { UniformPlugin } from 'https://cdn.skypack.dev/@shader-art/plugin-uniform';
+
+    ShaderArt.register([() => new UniformPlugin()]);
+  </script>
+</body>
+</html>
