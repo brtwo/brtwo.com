@@ -18,6 +18,7 @@
       width: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
       font-family: 'Switzer', sans-serif;
       font-size: 14px;
       font-size: clamp(14px, 4.5vw, 25px);
@@ -99,6 +100,23 @@
     a:first-child {
       margin-top: 1rem;
     }
+
+    .loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: black;
+      opacity: 1;
+      pointer-events: none;
+      transition: all 2s;
+      z-index: 9999
+    }
+
+    .loaded {
+      opacity: 0 !important
+    }
   </style>
 </head>
 <body class="body">
@@ -113,6 +131,8 @@
       <a href="https://instagram.com/_brtwo" target="_blank">Instagram</a>
     </p>
   </div>
+
+  <div class="loader" id="loader"></div>
 
   <shader-art autoplay>
     <uniform type="float" name="scale" value="0.3" min="0.1" max="4" step="0.01" />
@@ -210,6 +230,10 @@
     import { UniformPlugin } from 'https://cdn.skypack.dev/@shader-art/plugin-uniform';
 
     ShaderArt.register([() => new UniformPlugin()]);
+
+    window.onload = function () {
+      document.getElementById('loader').classList.add('loaded')
+    }
   </script>
 </body>
 </html>
